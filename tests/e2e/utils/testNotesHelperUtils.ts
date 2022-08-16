@@ -145,6 +145,10 @@ const dragAndDrop = (subject: string, element: string) => {
   cy.get(element).trigger('drop', { dataTransfer: dt })
 }
 
+const clickNoteDontPanic = () => {
+  clickTestID(TestID.NOTE_OPTION_DONT_PANIC)
+}
+
 export {
   assertNewNoteCreated,
   assertNoteEditorCharacterCount,
@@ -158,6 +162,7 @@ export {
   createXUniqueNotes,
   clickEmptyTrash,
   clickNoteAtIndex,
+  clickNoteDontPanic,
   clickNoteOptionDeleteNotePermanently,
   clickNoteOptionFavorite,
   clickNoteOptionRestoreFromTrash,

@@ -22,6 +22,7 @@ export enum TestID {
   NOTE_OPTIONS_DIV = 'note-options-div-',
   NOTE_OPTIONS_NAV = 'note-options-nav',
   NOTE_OPTION_DELETE_PERMANENTLY = 'note-option-delete-permanently',
+  NOTE_OPTION_DONT_PANIC = 'note-option-dont-panic',
   NOTE_OPTION_DOWNLOAD = 'note-option-download',
   NOTE_OPTION_FAVORITE = 'note-option-favorite',
   NOTE_OPTION_REMOVE_CATEGORY = 'note-option-remove-category',
@@ -55,5 +56,4 @@ export enum TestID {
   LAST_SYNCED_NOTIFICATION_SYNCING = 'last-synced-notification-syncing',
   LAST_SYNCED_NOTIFICATION_UNSAVED = 'last-synced-notification-unsaved',
   LAST_SYNCED_NOTIFICATION_DATE = 'last-synced-notification-date',
-  DONT_PANIC = 'dont-panic',
 }

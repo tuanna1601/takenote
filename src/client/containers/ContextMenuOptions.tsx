@@ -215,7 +215,7 @@ const NotesOptions: React.FC<NotesOptionsProps> = ({ clickedNote }) => {
         text={LabelText.COPY_REFERENCE_TO_NOTE}
       />
       <ContextMenuOption
-        dataTestID={TestID.DONT_PANIC}
+        dataTestID={TestID.NOTE_OPTION_DONT_PANIC}
         handler={(e: React.SyntheticEvent) => dontPanicHandler(e, clickedNote)}
         icon={Italic}
         text={LabelText.DONT_PANIC}

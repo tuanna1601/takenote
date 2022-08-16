@@ -41,6 +41,7 @@ import {
   holdKeyAndClickNoteAtIndex,
   trashAllNotes,
   dragAndDrop,
+  clickNoteDontPanic,
 } from '../utils/testNotesHelperUtils'
 import {
   addCategory,
@@ -681,5 +682,18 @@ describe('Manage notes test', () => {
     cy.get('[data-testid=note-list]').within(() => {
       cy.get('.note-list-each').should('have.length', 2)
     })
+  })
+
+  it('should remove italics when clicking on dont panic via context menu', () => {
+    const sampleText = '*This is Italic* **This is not italic** ***This is both bold and Italic***'
+
+    clickCreateNewNote()
+    // add some text to the editor
+    typeNoteEditor(sampleText)
+
+    openNoteContextMenu()
+    clickNoteDontPanic()
+
+    assertNoteEditorCharacterCount(sampleText.length - 4)
   })
 })
